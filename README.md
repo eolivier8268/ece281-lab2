@@ -26,3 +26,19 @@ Then it **elaborates** the *any* entity with the name `*_tb`. In this case, that
 Finally, the workflow **runs** the simulation. If successful then it will quietly exit with a `0` code.
 If any of the `assert` statements fail **with** `severity failure` then GHDL will cease the simulation and exit with non-zero code; this will also cause the workflow to fail.
 Assert statements of other severity levels will be reported, but not fail the workflow.
+
+## Results
+
+The implementation of the seven segment display was written and tested.  
+The output waveform below matched the pre-lab.  
+![waveform from test bench](./img/waveform_7SD_testbench.png)  
+![inputs and outputs from pre-lab](./img/prelab-IO-table.png)  
+
+The top-level design was created and tested on the basys3 board.   
+The design ran successfully, and a demo video was uploaded in Teams. 
+
+## Documentation Statement
+
+I watched the code-walk of ICE3 uploaded by Capt Yarbrough to get a better understanding of how VHDL works.  
+C3C Cavan Cook and I also talked through the difference between entities and components and multi-level design.  
+My code already worked by this time so I did not change anything based on the video or my discussion with C3C Cook.  
